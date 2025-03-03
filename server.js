@@ -8,7 +8,7 @@ process.env.ATLAS_URI = "mongodb+srv://Teddy:Teddy@nodejs.xkiuw.mongodb.net/?ret
     const uri = process.env.ATLAS_URI;
 
     (async () => {
-        try {
+        try { 
             await mongoose.connect(uri, {
                 useNewUrlParser: true,
                 useUnifiedTopology: true,
@@ -27,7 +27,7 @@ process.env.ATLAS_URI = "mongodb+srv://Teddy:Teddy@nodejs.xkiuw.mongodb.net/?ret
 
             app.get('/', (req, res) => {
                 res.send('MERN app is running');
-            });
+            });gffhghgg
 
             app.listen(port, () => {
                 console.log(`Server is running on port: ${port}`);
